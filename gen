@@ -7,17 +7,17 @@
 //  */
 
 //
-// ISO C++ 9.2.0
+// G++ 9.2.0
 //
 
-#include<unordered_map>
+#include<ext/pb_ds/assoc_container.hpp>
 #include<ctime>
 
 class gen_rand {
 private:
 	long long MOD;
 	long long seed, step;
-	std::unordered_map<long long, long long> dp;
+	std::gp_hash_table<long long, long long> dp;
 	long long binpow (long long x, long long y) {
 		if (y == 0)
 			return 1LL;
