@@ -17,7 +17,7 @@ class gen_rand {
 private:
 	long long MOD;
 	long long seed, step;
-	std::gp_hash_table<long long, long long> dp;
+	__gnu_pbds::gp_hash_table<long long, long long> dp;
 	long long binpow (long long x, long long y) {
 		if (y == 0)
 			return 1LL;
